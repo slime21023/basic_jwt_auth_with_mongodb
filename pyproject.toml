@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ssp-api-service"
+version = "0.1.0"
+description = ""
+authors = ["kevinchueh <kevinchueh@retailingdata.com.tw>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic-settings = "^2.1.0"
+fastapi = {extras = ["all"], version = "^0.104.1"}
+bunnet = "^1.2.0"
+email-validator = "^2.1.0.post1"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+bcrypt = "4.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
